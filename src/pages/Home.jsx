@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
+import Main from "../components/Main";
 
 export default function Home() {
   const [isFakeDark, setIsFakeDark] = useState(false);
@@ -13,6 +14,7 @@ export default function Home() {
         {isFakeDark ? "☀️" : "🌙"}
       </button>
       <Header />
+      <Main />
     </section>
   );
 }

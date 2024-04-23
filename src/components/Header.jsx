@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Header() {
   return (
-    <header className="flex justify-between">
+    <header className="flex justify-between mb-8">
       <h1 className="flex gap-2 text-[26px] items-center font-bold">
         <span className="text-[140%]">⚛️</span>The Atomic Blog
       </h1>
