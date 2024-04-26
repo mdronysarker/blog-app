@@ -24,7 +24,7 @@ const reducer = (state, action) => {
         post: [...state.post, action.payload],
       };
     case "SET_CLEARPOST":
-      return { ...state, page: action.payload };
+      return { ...state, post: [] };
     case "SET_ARCIVEPOST":
       return { ...state, type: action.payload };
     default:

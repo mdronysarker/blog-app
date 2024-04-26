@@ -10,11 +10,14 @@ export default function FromAddPost() {
 
   const { state, dispatch } = useContext(PostContext);
 
-  console.log(state);
+  //   console.log(state);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!title || !body) return;
     dispatch({ type: "SET_POST", payload: { title: title, body: body } });
+    setTitle("");
+    setBody("");
   };
 
   return (
