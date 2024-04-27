@@ -16,7 +16,7 @@ export default function Header() {
         <span className="text-[140%]">⚛️</span>The Atomic Blog
       </h1>
       <div className="flex gap-8 items-center">
-        <p className="font-bold">🚀 30 atomic posts found</p>
+        <p className="font-bold">🚀 {state.post.length} atomic posts found</p>
         <Search />
         <Button onClick={handleClick}>Clear Posts</Button>
       </div>
