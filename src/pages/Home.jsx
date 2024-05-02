@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Main from "../components/Main";
+import Archive from "../components/Archive";
 
 export default function Home() {
   const [isFakeDark, setIsFakeDark] = useState(false);
@@ -15,6 +16,7 @@ export default function Home() {
       </button>
       <Header />
       <Main />
+      <Archive />
     </section>
   );
 }

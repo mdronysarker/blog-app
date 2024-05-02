@@ -10,7 +10,7 @@ export default function Post() {
   // console.log(state.post);
 
   return (
-    <ul className="grid grid-cols-4 gap-8 hover:">
+    <ul className="grid grid-cols-4 gap-8 ">
       {state.post
         .filter((item) =>
           `${item.title} ${item.body}`
